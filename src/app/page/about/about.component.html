@@ -1,1 +1,42 @@
-<p>about works!</p>
+
+<h1>Cartesi DApp Template</h1>
+<p>This project serves as a template for developing decentralized applications (DApps) using the Cartesi framework. It is designed to integrate seamlessly with Cartesi's off-chain computations while providing a user-friendly interface for interacting with the blockchain.</p>
+
+<h2>Features</h2>
+<ul>
+    <li><strong>Onboard Integration</strong>: Utilizes Onboard.js for streamlined wallet connection and management, making it easy for users to log in with MetaMask and other popular wallets.</li>
+    <li><strong>Ethers.js Integration</strong>: Leverages Ethers.js for interacting with Ethereum contracts, enabling a wide range of blockchain operations directly from the frontend.</li>
+    <li><strong>Generic DApp Interaction</strong>: The homepage is built to work with any Cartesi DApp, offering generic input functionality alongside pre-implemented deposit mechanisms for assets such as Ether, ERC20 tokens, and ERC721 tokens.</li>
+    <li><strong>Voucher Execution</strong>: Supports the execution of vouchers, further integrating the DApp with Cartesi's off-chain computations.</li>
+    <li><strong>Asset Management</strong>: An assets page equipped with features for transferring and withdrawing assets, compatible with examples from npm <code>cartesi-wallet</code> and the Python package <code>cartesi-wallet</code>.</li>
+</ul>
+<p>Check the repositories for examples:</p>
+<ul>
+    <li>Node.js: <a href="https://github.com/jplgarcia/cartesi-asset-examples">cartesi-asset-examples</a></li>
+    <li>Python: <a href="https://github.com/jplgarcia/python-wallet">python-wallet</a></li>
+</ul>
+
+<h2>Sunodo Integration</h2>
+<p>Default addresses are set for Sunodo, simplifying the setup for developers:</p>
+<ul>
+    <li>DApp Address: <code>0x70ac08179605AF2D9e75782b8DEcDD3c22aA4D0C</code></li>
+    <li>DApp Relay Address: <code>0xF5DE34d6BbC0446E2a45719E718efEbaaE179daE</code></li>
+    <!-- Add more addresses as needed -->
+</ul>
+<p>To change configurations, edit the file <code>src/app/service/ethereum.service.ts</code>.</p>
+
+<h2>Inspect and GraphQL Calls</h2>
+<ul>
+    <li><strong>Inspect Calls</strong>: For blockchain inspect calls, check <code>src/app/service/http.service.ts</code>, which uses Axios for HTTP GET requests. The default URL is set for Sunodo.</li>
+    <li><strong>GraphQL Calls</strong>: Located in <code>src/app/service/graphql.service.ts</code>, this service provides predefined GraphQL queries using URQL.</li>
+</ul>
+
+<h2>Getting Started</h2>
+<ol>
+    <li>Install dependencies with <code>npm install</code>.</li>
+    <li>Start the Angular development server with <code>ng serve</code>.</li>
+    <li>Open <code>http://localhost:4200/</code> in your browser to view the DApp.</li>
+</ol>
+
+<h2>Contribution</h2>
+<p>Feel free to contribute to the repository by submitting pull requests or creating issues for bugs and feature requests.</p>
