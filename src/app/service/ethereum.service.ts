@@ -26,14 +26,14 @@ export class EthereumService {
   private ERC721PortalContract: ethers.Contract | null = null;
   private erc20TokenContract: ethers.Contract | null = null;
 
-  private dappAddress = '0x70ac08179605AF2D9e75782b8DEcDD3c22aA4D0C'
+  private dappAddress = '0xab7528bb862fb57e8a2bcd567a2e929a0be56a5e'
   private dappRelayAddress = "0xF5DE34d6BbC0446E2a45719E718efEbaaE179daE"
   private inputAddress = '0x59b22D57D4f067708AB0c00552767405926dc768'
   private etherPortalAddress = '0xFfdbe43d4c855BF7e0f105c400A50857f53AB044'
   private erc20PortalAddress = '0x9C21AEb2093C32DDbC53eEF24B873BDCd1aDa1DB'
   private erc721PortalAddress = '0x237F8DD094C0e47f4236f12b4Fa01d6Dae89fb87'
 
-  private erc20TokenAddress = '0xae7f61eCf06C65405560166b259C54031428A9C4'
+  private erc20TokenAddress = '0xf795b3D15D47ac1c61BEf4Cc6469EBb2454C6a9b'
 
   constructor(private onboardService: OnboardService) {}
 

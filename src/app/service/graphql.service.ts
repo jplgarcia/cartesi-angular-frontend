@@ -149,6 +149,7 @@ export class GraphqlService {
 
   async getUserVouchers(user: string) {
     let vouchers = await this.getVouchers()
+    console.log(vouchers)
     if (!vouchers){
       return []
     }
