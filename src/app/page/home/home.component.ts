@@ -132,7 +132,11 @@ export class HomeComponent {
   }
 
   openVoucher(voucher:any) {
-    voucher.json = JSON.parse(voucher.plainText)
+    try {
+      voucher.json = JSON.parse(voucher.plainText)
+    } catch (error) {
+      console.log("not a json")
+    }
     const dialogRef = this.dialog.open(VoucherComponent, {
       width: '250px',
       data: voucher // You can pass data to the dialog here

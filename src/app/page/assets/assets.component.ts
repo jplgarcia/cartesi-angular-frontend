@@ -99,7 +99,9 @@ export class AssetsComponent {
   async submitSunodoDeposit(): Promise<void> {
     try {
       await this.ethereumService.initEthereum();
+      console.log(this.sunodoDepositAmount)
       await this.ethereumService.depositERC20Assets(this.sunodoDepositAmount);
+      console.log("done")
     } catch (error) {
       console.error('Error updating data:', error);
     }
